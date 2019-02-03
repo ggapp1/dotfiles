@@ -43,11 +43,14 @@ bindsym Mod1+Shift+q kill
 #gaps
 for_window [class="^.*"] border pixel 0
 
-gaps inner 0
-gaps outer 0
+bindsym Mod1+Shift+b border pixel 0
+bindsym Mod1+b border pixel 1
 
 
-exec feh --bg-scale ~/Pictures/Wallpapers/HKAZodc.jpg
+client.focused #e23131 #e23131 #e23131 #e23131  #e23131
+
+
+exec feh --bg-scale ~/Pictures/Wallpapers/a-dark-room-2560×1440.jpg
 
 # start dmenu (a program launcher)
 bindsym Mod1+d exec dmenu_run
@@ -181,13 +184,13 @@ bar {
         status_command i3status
         colors 
         {
-                background #000000
+                background #111111
                 statusline #ffffff
-                separator #708EA0
+                separator #e23131
 
 
-                focused_workspace #000000 #3F4551 #ffffff
-                inactive_workspace #333333 #222222 #888888
+                focused_workspace #e23131 #222222 #d38390
+                inactive_workspace #222222 #222222 #888888
                 urgent_workspace #aa0000 #990000 #ffffff
         }
 }
